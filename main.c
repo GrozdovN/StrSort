@@ -57,8 +57,7 @@ int main(int argc, char **argv)
 		return 0;
 	}
 
-
-    FILE *fin = fopen(argv[2], "r");
+	FILE *fin = fopen(argv[2], "r");
 	if(!fin)
 	{
 		printf("ERROR: failed to open file\n");
@@ -146,7 +145,7 @@ int lexCmp(const char *left, const char *right)
 	}
 	if (left[i] != endl || right[i] != endl)
 	{
-        return (left[i] == endl) ? 1 : -1;
+		return (left[i] == endl) ? 1 : -1;
 	}
 	return 0;
 }
@@ -200,8 +199,8 @@ void insertSort(arr_t *const begin, arr_t *const end, cmp_func cmp)
 void merge(arr_t *const _begin, arr_t *const _mid, arr_t *const _end, arr_t *const buf, cmp_func cmp)
 {
 	arr_t 	*b = buf,
-			*f = _begin,
-			*s = _mid;
+		*f = _begin,
+		*s = _mid;
 	for(; f != _mid && s != _end; ++b)
 	{
 	    *b = (cmp(*f, *s) != -1) ? *f++ : *s++;
@@ -250,7 +249,6 @@ void quickSort(arr_t *const begin, arr_t *const end, cmp_func cmp)
 		
 	while (l <= r) 
 	{
-		//printf("%d %d\n", l, r);
 		while (cmp(*l, mid) == 1)//arr[l] < mid) 
 		{
 			++l;
