@@ -134,7 +134,7 @@ int main(int argc, char **argv)
 
 int lexCmp(const char *left, const char *right)
 {
-    const char endl = '\n';
+	const char endl = '\n';
 	int i = 0;
 	for ( ; left[i] != endl && right[i] != endl; ++i) 
 	{
