@@ -34,11 +34,12 @@ granularity: each sample hit covers 2 byte(s) for 0.70% of 1.44 seconds
 Flat profile:
 
 Each sample counts as 0.01 seconds.
+
 | % time | cumulative seconds | self seconds |   calls   | self ms/call  | total ms/call | name | 
 |------|---------|-------|---------|--------|-------|----------|
-|57.19 |    2.93 |   2.93|         |        |       | main     |
-|41.52 |   5.05  |  2.13 | 101559  |  0.02  |  0.02 |prints|
-| 0.98 |    5.10 |   0.05| 1562440 |   0.00 |   0.00| lexCmp|
+|57.19 |    2.93 |   2.93|         |        |       | main  |
+|41.52 |   5.05  |  2.13 | 101559  |  0.02  |  0.02 | prints |
+| 0.98 |    5.10 |   0.05| 1562440 |  0.00  |   0.00| lexCmp|
 | 0.59 |    5.13 |   0.03|  101558 |   0.00 |   0.00| merge|
 | 0.00 |    5.13 |   0.00|       1 |   0.00 |  80.23| _sort|
 | 0.00 |    5.13 |   0.00|       1 |   0.00 |  80.23| mergeSort|
