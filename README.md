@@ -34,7 +34,7 @@ granularity: each sample hit covers 2 byte(s) for 0.70% of 1.44 seconds
 Flat profile:
 
 Each sample counts as 0.01 seconds.
-|% time| cumulative seconds | self seconds |   calls   |self ms/call  |total ms/call | name | 
+| % time | cumulative seconds | self seconds |   calls   | self ms/call  | total ms/call | name | 
 |------|---------|-------|---------|--------|-------|----------|
 |57.19 |    2.93 |   2.93|         |        |       | main     |
 |41.52 |   5.05  |  2.13 | 101559  |  0.02  |  0.02 |prints|
